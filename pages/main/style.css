@@ -43,8 +43,6 @@ body{
     position: absolute;
     width: 298px;
     height: 54px;
-    left: calc(50% - 298px/2 + 332px);
-    top: 626px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     transition: 0.2s;
@@ -61,7 +59,6 @@ body{
     background:#767474;
     cursor: default;
 }
-
 /*Header start*/
 nav ul {
   display: flex;
@@ -163,13 +160,10 @@ h1{
 /* Header end*/
 
 /*Background start*/
-.btn.background{
-  max-width: 465px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 92px 0 0 820px;
+.intro_background{
+ position: relative;
+ left: 750px;
+ top: 600px;
 }
 .background{
     background: no-repeat;
@@ -240,6 +234,11 @@ h1{
 /*Backstage end*/
 
 /*Pets start*/
+.intro_pets{
+  position: absolute;
+  top: 1100px;
+  left: 550px;
+}
 .pets_inner{
   position: relative;
   z-index: -1;
@@ -369,37 +368,18 @@ figure.pets_card:hover p {
 .pets_block {
   position: relative;
 }
-/*.pets_block::before {
-  content: "";
-  position: absolute;
-  top: 600px;
-  right: 0%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: no-repeat url(/assets/images/strelitzia\ 1.png) right;
-}
-.pets_block::after {
-  content: "";
-  position: absolute;
-  top: 400px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: no-repeat url(/assets/images/palm_foto.png) left;
-}*/
-.btn.pets {
-  margin-top: 700px;
-  margin-right: 0px;
-}
 /*Pets end*/
 
 /*Friend start*/
+.intro_friend{
+  position: relative;
+  left: 360px;
+}
 #friend {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   opacity: 0.9;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 160px;
   z-index: -5;
   }
   .friend_text_1{
@@ -429,7 +409,7 @@ figure.pets_card:hover p {
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
-    padding: 32px 3vw 60px 4vw;
+    padding: 32px 3vw 100px 4vw;
   }
   .friend_inner h2{
     font-weight: 400;
@@ -494,20 +474,28 @@ figure.pets_card:hover p {
     display: inline-block;
     border-bottom: 1px solid #E47209;
   }
-  .brn.friend{
-    margin: 66px 0 59px 334px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
 /*Friend end*/
 
 /*Testimonials start*/
+.testimonials{
+  margin-bottom: 180px;
+}
+.next{
+  border-radius: 5px;
+}
+.intro_testimonials{
+  position: relative
+  top:60px;
+}
 .name_text{
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
   color: #000000;
+}
+.testimonials.container{
+  padding-top: 69px;
+  padding-bottom: 100px;
 }
 .place{
   font-weight: 300;
@@ -561,6 +549,11 @@ figure.pets_card:hover p {
 .testimonials_slider {
   display: flex;
 }
+.footer p{
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+  }
 .slider {
   margin: 20px auto 32px;
   -webkit-appearance: none;
@@ -599,6 +592,113 @@ figure.pets_card:hover p {
   right: 0;
 }
 /*Testimonials end*/
-/*Footer start*/
 
+/*Footer start*/
+.footer {
+  background-color: #000000;
+  height: 440px;
+}
+.footer.container {
+  padding: 40px 0 41px 0;
+}
+.footer_logo {
+  margin-right: 101px;
+}
+.footer.logo {
+  height: 52px;
+  margin-top: 41px;
+  margin-bottom: 70px;
+}
+.footer_submit{
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  justify-content: space-between;
+  padding-left: 32px;
+}
+.nav_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+.nav-wrapper .item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer h3 {
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;;
+  text-align: left;
+}
+.footer input {
+  color: #F9804B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #000000;
+  width: 228px;
+  padding: 10px;
+  height: 42px;
+  border: 1px solid rgba(249, 128, 75);
+  margin-right: 8px;
+}
+.submit {
+  width: 129px;
+  height: 42px;
+  background: #F1F3F2;
+  border-radius: 5px;
+  color: #4B9200;
+  border: 1px solid #4B9200;
+}
+.footer_submit{
+  content: "";
+  position: absolute;
+  left: 800px;
+}
+.footer.button {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 46px;
+}
+.footer li {
+  margin-bottom: 30px;
+}
+/*.btn.footer{
+  width: 298px;
+  height: 54px;
+}*/
+.social {
+  display: flex;
+  color: #FFFFFF;
+  line-height: 22.4px;
+}
+.social img {
+  margin-right: 12px;
+  position: relative;
+  bottom: 2px;
+}
+.subscribe-text {
+  content: "";
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 10px 50px 8px 140px;
+}
 /*Footer end*/
