@@ -263,12 +263,6 @@ h1{
   top: 578px;
   left: 1180px;
 }
-.arrow:hover,
-.left:hover,
-.right:hover {
-  background-color: #4B9200;
-  cursor: pointer;
-}
 .list_block{
   padding-top: 175px;
   display: grid;
@@ -315,56 +309,6 @@ h1{
   justify-content: space-between;
   padding: 0 12px 0 16px;
 }
-/*figure.pets_card figcaption::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-	content: '';
-	opacity: 0;
-	-webkit-transform: translate3d(0,50%,0);
-	transform: translate3d(0,50%,0);
-}
-figure.pets_card.text_block {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	color: #f66d52 !important;
-	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
-	transition: transform 0.35s, color 0.35s;
-	-webkit-transform: translate3d(0,-50%,0);
-	transform: translate3d(0,-50%,0);
-}
-figure.pets_card figcaption::before,
-figure.pets_card p {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-figure.pets_card p {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 2em;
-	width: 100%;
-	opacity: 0;
-	-webkit-transform: translate3d(0,10px,0);
-	transform: translate3d(0,10px,0);
-}
-figure.pets_card:hover .text_block {
-	color: #0000;
-	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-}
-figure.pets_card:hover figcaption::before ,
-figure.pets_card:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}*/
 .pets_block {
   position: relative;
 }
@@ -588,9 +532,6 @@ figure.pets_card:hover p {
   bottom: 0;
   transform: translateY(20%);
 }
-.aside-image--right {
-  right: 0;
-}
 /*Testimonials end*/
 
 /*Footer start*/
@@ -614,9 +555,13 @@ figure.pets_card:hover p {
   display: flex;
   flex-direction: column;
 }
-.logo {
+.nav_logo {
   margin-top: 41px;
   margin-bottom: 166px;
+}
+.nav_footer{
+  position: relative;
+  right: 150px;
 }
 .footer h3{
   padding: 0;
@@ -625,19 +570,15 @@ figure.pets_card:hover p {
   line-height: 120%;
   color: #FFFFFF;
 }
-.intro_footer {
-  width: 300px;
-  display: block;
-  text-align: center;
-}
 .footer_submit {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
 .subscribe-text {
-  margin-top: 0px;
-  display: flex;
+  position: relative;
+  bottom: 40px;
+  right: 100px;
   align-items: center;
   justify-content: space-between;
   margin-left: 0;
