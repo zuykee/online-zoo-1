@@ -1,1 +1,1 @@
-# online-zoo https://anastasiash2.github.io/online-zoo/pages/main/index.html
+https://anastasiash2.github.io/online-zoo/pages/main/
