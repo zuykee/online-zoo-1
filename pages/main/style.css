@@ -319,12 +319,12 @@ h1{
   position: relative;
   left: 360px;
 }
-#friend {
+.friend {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   opacity: 0.9;
   margin-top: 200px;
   margin-bottom: 160px;
-  z-index: -5;
+  z-index: -2;
   }
   .friend_text_1{
   font-weight: 400;
@@ -354,6 +354,7 @@ h1{
     backdrop-filter: blur(2px);
     border-radius: 20px;
     padding: 32px 3vw 100px 4vw;
+    z-index: -1;
   }
   .friend_inner h2{
     font-weight: 400;
@@ -507,7 +508,6 @@ h1{
   background-color: #fdfdff;
   border: 1px solid #fe9013;
   border-radius: 4px;
-  background-image: linear-gradient(var(--color-32), var(--color-32));
   background-repeat: no-repeat;
 }
 .slider::-webkit-slider-thumb {
